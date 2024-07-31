@@ -1,0 +1,153 @@
+/* Resetting border styles for all elements */
+/* {
+    border: 1px solid red;
+}*/
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #FFFFFF;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Container for profile and links */
+.container {
+    position: absolute;
+    background-color: #2E003E;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    z-index: 1;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+}
+
+/* Profile section styles */
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #00FFFF;
+    box-shadow: 0 0 3px #00FFFF, 0 0 6px #00FFFF, 0 0 9px #00FFFF;
+}
+
+.profile h1 {
+    color: #39FF14;
+    text-shadow: 0 0 5px rgba(57, 255, 20, 0.3),
+                 0 0 10px rgba(57, 255, 20, 0.2),
+                 0 0 20px rgba(57, 255, 20, 0.1),
+                 0 0 40px rgba(57, 255, 20, 0.05);
+    margin: 10px 0 5px;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.profile p {
+    color: #39FF14;
+    text-shadow: 0 0 5px #39FF14,
+                0 0 10px #39FF14,
+                0 0 20px #39FF14,
+                0 0 40px #39FF14;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Links section styles */
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    background-color: #00FFFF;
+    color: #333;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.link i {
+    margin-right: 10px; /* Spacing between icon and text */
+}
+
+.link:hover {
+    background-color: #FF00FF;
+    color: #FFFFFF;
+}
+
+/* Marquee text colors */
+.red{ color: #FF0000; }
+.dblue{ color: #2424ff; }
+.gold{ color: #FFD700; }
+.green{ color: #00FF7F}
+.lblue{ color: #00FFFF; }
+.crimson{ color: #DC143C;}
+.black{ color: #333; }
+
+/* Marquee container styles */
+.marquee-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Marquee element styles */
+.marquee {
+    position: absolute;
+    white-space: nowrap;
+    font-family: 'Press Start 2P', cursive;
+    color: #E0E0E0;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Specific marquee styles */
+.marquee-1 { animation: marquee 12s linear infinite; top: 0%; }
+.marquee-2 { animation: marquee 29s linear infinite; top: 4.35%; }
+.marquee-3 { animation: marquee 18s linear infinite; top: 8.70%; }
+.marquee-4 { animation: marquee 15s linear infinite; top: 13.05%; }
+.marquee-5 { animation: marquee 24s linear infinite; top: 17.40%; }
+.marquee-6 { animation: marquee 19s linear infinite; top: 21.75%; }
+.marquee-7 { animation: marquee 22s linear infinite; top: 26.10%; }
+.marquee-8 { animation: marquee 16s linear infinite; top: 30.45%; }
+.marquee-9 { animation: marquee 31s linear infinite; top: 34.80%; }
+.marquee-10 { animation: marquee 26s linear infinite; top: 39.15%; }
+.marquee-11 { animation: marquee 19s linear infinite; top: 43.50%; }
+.marquee-12 { animation: marquee 14s linear infinite; top: 47.85%; }
+.marquee-13 { animation: marquee 18s linear infinite; top: 52.20%; }
+.marquee-14 { animation: marquee 25s linear infinite; top: 56.55%; }
+.marquee-15 { animation: marquee 17s linear infinite; top: 60.90%; }
+.marquee-16 { animation: marquee 31s linear infinite; top: 65.25%; }
+.marquee-17 { animation: marquee 14s linear infinite; top: 69.60%; }
+.marquee-18 { animation: marquee 22s linear infinite; top: 73.95%; }
+.marquee-19 { animation: marquee 27s linear infinite; top: 78.30%; }
+.marquee-20 { animation: marquee 18s linear infinite; top: 82.65%; }
+.marquee-21 { animation: marquee 33s linear infinite; top: 87.00%; }
+.marquee-22 { animation: marquee 16s linear infinite; top: 91.35%; }
+.marquee-23 { animation: marquee 25s linear infinite; top: 95.00%; }
